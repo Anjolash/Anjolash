@@ -82,6 +82,10 @@ i:hover{
     color: #603060;
 }
 
+section:nth-child(odd){
+    background-color: #ffe8e8ef;
+}
+
 section:nth-child(even){
     background-color: #f8f8f8;
 }
@@ -233,6 +237,7 @@ nav {
 .about-me--img-container--container{
     width: 100%;
     animation: fade-in 1200ms 800ms backwards;
+    filter: invert(0);
 
 }
 
@@ -291,8 +296,10 @@ nav {
 }
 
 .language__img{
-    width: 100%;
+    width: 100%;  
     max-width: 100px;
+    height: 100%;
+    max-height:  100px;
     transition: all 300ms;
 
 }
@@ -383,6 +390,7 @@ nav {
 
 .project__description--title{
     font-size: 40px;
+    margin-bottom: 24PX;
 }
 
 .project__description--para{
@@ -402,6 +410,9 @@ nav {
     color: #fff;
 }
 
+.coming-soon{
+    filter: blur(4px);
+}
 /*footer*/
 
 footer{
